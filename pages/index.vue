@@ -34,13 +34,16 @@
     </v-simple-table>
     <div class="text-center">
       <v-bottom-sheet v-model="sheet">
-        <v-sheet class="text-center pa-5" height="220px">
+        <v-sheet class="text-center pa-5" height="260px">
           <p class="display-1">{{ cellTitle }}</p>
           <v-btn block class="mb-3" color="primary" @click="setCell(-1)"
             >nada <v-icon>mdi-adjust</v-icon></v-btn
           >
           <v-btn block class="mb-3" color="success" @click="setCell(1)"
             >herido <v-icon>mdi-gamepad</v-icon></v-btn
+          >
+          <v-btn block class="mb-3" color="teal darken-4" @click="setCell(2)"
+            >soldadito <v-icon>mdi-face</v-icon></v-btn
           >
           <v-btn block class="mb-3" color="error" @click="sheet = !sheet"
             >otro <v-icon>mdi-security</v-icon></v-btn
@@ -76,7 +79,7 @@ export default {
     setCell(value) {
       this.squares[this.currentI][this.currentJ] = value
       this.classes[this.currentI][this.currentJ] =
-        value === -1 ? 'bg-blue' : 'bg-red'
+        value === -1 ? 'bg-blue' : value === 2 ? 'bg-green' : 'bg-red'
       this.$set(this.classes, this.currentI, this.classes[this.currentI])
 
       this.sheet = false
@@ -113,5 +116,8 @@ export default {
 }
 .bg-blue {
   background-color: #77b9d6;
+}
+.bg-green {
+  background-color: #49af6b;
 }
 </style>
