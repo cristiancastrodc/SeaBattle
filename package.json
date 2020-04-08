@@ -15,12 +15,13 @@
     "@nuxtjs/pwa": "^3.0.0-0"
   },
   "devDependencies": {
+    "@mdi/font": "^5.0.45",
     "@nuxt/typescript-build": "^0.6.0",
+    "@nuxtjs/stylelint-module": "^3.1.0",
     "@nuxtjs/vuetify": "^1.0.0",
     "eslint-config-prettier": "^6.10.0",
     "eslint-plugin-prettier": "^3.1.2",
     "prettier": "^1.19.1",
-    "@nuxtjs/stylelint-module": "^3.1.0",
     "stylelint": "^10.1.0"
   }
 }
