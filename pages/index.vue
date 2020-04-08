@@ -39,13 +39,18 @@
           <v-btn block class="mb-3" color="primary" @click="setCell(-1)"
             >nada <v-icon>mdi-adjust</v-icon></v-btn
           >
-          <v-btn block class="mb-3" color="success" @click="setCell(1)"
+          <v-btn block class="mb-3" color="error" @click="setCell(1)"
             >herido <v-icon>mdi-gamepad</v-icon></v-btn
           >
           <v-btn block class="mb-3" color="teal darken-4" @click="setCell(2)"
             >soldadito <v-icon>mdi-face</v-icon></v-btn
           >
-          <v-btn block class="mb-3" color="error" @click="sheet = !sheet"
+          <v-btn
+            block
+            class="mb-3"
+            color="error"
+            outlined
+            @click="sheet = !sheet"
             >otro <v-icon>mdi-security</v-icon></v-btn
           >
         </v-sheet>
