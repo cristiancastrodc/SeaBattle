@@ -1,0 +1,26 @@
+{
+  "name": "NavyBattle",
+  "version": "1.0.0",
+  "description": "This app is made for children to keep track of their shoots in Navy Battle.",
+  "author": "Cristian Castro",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "nuxt": "^2.0.0",
+    "@nuxtjs/pwa": "^3.0.0-0"
+  },
+  "devDependencies": {
+    "@nuxt/typescript-build": "^0.6.0",
+    "@nuxtjs/vuetify": "^1.0.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "prettier": "^1.19.1",
+    "@nuxtjs/stylelint-module": "^3.1.0",
+    "stylelint": "^10.1.0"
+  }
+}
